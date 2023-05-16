@@ -23,7 +23,7 @@ class CalcularSueldo():
     def __str__(self):
         return f"Nombre: {self.nombre}\nApellido: {self.apellido}\nEdad: {self.edad}\n\
 Nacionalidad: {self.nacionalidad}\nCedula: {self.cedula}\nDias Trabajados: {self.diasTrabajados}\n\
-Costo del dia: {self.costoDia}\nSueldo: {self.sueldo}"
+Costo del dia: ${self.costoDia}\nSueldo:${self.sueldo}"
         
 
 
@@ -34,6 +34,10 @@ Costo del dia: {self.costoDia}\nSueldo: {self.sueldo}"
 # más el 20% del sueldo básico.
 
 class Sueldo():
+    nombre = ""
+    apellido = ""
+    cedula = ""
+    sueldoBasico = 0.0
     def __init__(self, n, a, c, sB):
         self.nombre = n
         self.apellido = a
